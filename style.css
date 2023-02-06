@@ -1,3 +1,4 @@
+/* Reset configurações originais dos navegadores*/
 * {
     margin: 0;
     padding: 0;
@@ -32,7 +33,7 @@ input {
     font-size: 20px;
     background-color: #7c7c7c6b;
     color: #ffffff;
-    width: calc(100% -100px);
+    width: 300px;
 }
 
 button {
@@ -43,6 +44,7 @@ button {
     background-color: #7c7c7c6b;
     float: right;
     cursor: pointer;
+    margin-right: 15px;
 }
 
 button:hover {
@@ -50,7 +52,7 @@ button:hover {
 }
 
 .caixa-media {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .caixa-menor {

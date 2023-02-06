@@ -1,19 +1,21 @@
-// VARIÁVEIS => Um espaçona memória do computador que
-
-// Função é um trecho de código que só é executado quando é chamado//
+// VARIÁVEIS => Um espaço da memória do computador que guardamos algo (um numero, uma letra, um texto, uma imagem)
+// FUNÇÃO => Um trecho de código que só é executado quando é chamado
 
 //"assync" tem que vir antes da função para avisar que os dados
 //da função tem que ir buscar em um servidor externo
 //"await" temos que pedir para o html esperar o servidor responder
 //"fetch" ferramenta que vai ate o servidor buscar a informação
+
 let chave = "dee171899a7673302e9eff75f1b0f843";
 
 function colocarNaTela(dados) {
+  console.log(dados);
   document.querySelector(".cidade").innerHTML = "Tempo em " + dados.name;
   document.querySelector(".temp").innerHTML =
-    Math.floor(dados.main.temp) + "°CS";
+    Math.floor(dados.main.temp) + "°C";
   document.querySelector(".descricao").innerHTML = dados.weather[0].description;
-  document.querySelector(".icone").src = "";
+  document.querySelector(".icone").src =
+    "https://openweathermap.org/img/wn/" + dados.weather[0].icon + ".png";
 }
 
 async function buscarCidade(cidade) {
@@ -24,7 +26,7 @@ async function buscarCidade(cidade) {
       chave +
       "&lang=pt_br" +
       "&units=metric"
-  ).then((resposta) => resposta.json);
+  ).then((resposta) => resposta.json());
 
   colocarNaTela(dados);
 }

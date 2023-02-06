@@ -10,13 +10,18 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./style.css" />
     <script src="./script.js"></script>
     <title>Previsão do Tempo DevClub</title>
-    <link rel="stylesheet" href="./style.css" />
   </head>
+
   <body>
     <div class="caixa-maior">
-      <input class="input-cidade" placeholder="Cidade" type="text" />
+      <input
+        class="input-cidade"
+        placeholder="Digite o nome da cidade"
+        type="text"
+      />
       <button onclick="cliqueiNoBotao()">
         <img
           class="lupa"
@@ -32,12 +37,12 @@
         <div class="caixa-menor">
           <img
             class="icone"
-            src="https://cdn-icons-png.flaticon.com/512/414/414825.png"
+            src="https://openweathermap.org/img/wn/04n.png"
             alt=""
-            width="30px"
           />
           <p class="descricao">Nuvens Dispersas</p>
         </div>
+
         <p class="umidade">Umidade: 70%</p>
       </div>
     </div>
