@@ -10,13 +10,14 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <script src="./script.js"></script>
     <title>Previsão do Tempo DevClub</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div class="caixa-maior">
-      <input placeholder="Cidade" type="text" />
-      <button>
+      <input class="input-cidade" placeholder="Cidade" type="text" />
+      <button onclick="cliqueiNoBotao()">
         <img
           class="lupa"
           src="https://www.svgrepo.com/show/488200/find.svg"
@@ -25,10 +26,18 @@
       </button>
 
       <div class="caixa-media">
-        <h2>Tempo em Rio de Janeiro</h2>
+        <h2 class="cidade">Tempo em Rio de Janeiro</h2>
         <p class="temp">28°C</p>
 
-        <p class="descricao">Nuvens Dispersas</p>
+        <div class="caixa-menor">
+          <img
+            class="icone"
+            src="https://cdn-icons-png.flaticon.com/512/414/414825.png"
+            alt=""
+            width="30px"
+          />
+          <p class="descricao">Nuvens Dispersas</p>
+        </div>
         <p class="umidade">Umidade: 70%</p>
       </div>
     </div>
