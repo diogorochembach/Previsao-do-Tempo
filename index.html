@@ -4,16 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
     <title>Previsão do Tempo DevClub</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <input type="text" />
-    <button>Buscar</button>
+    <div class="caixa-maior">
+      <input placeholder="Cidade" type="text" />
+      <button>
+        <img
+          class="lupa"
+          src="https://www.svgrepo.com/show/488200/find.svg"
+          alt=""
+        />
+      </button>
 
-    <h2>Tempo em Rio de Janeiro</h2>
-    <p>28°C</p>
+      <div class="caixa-media">
+        <h2>Tempo em Rio de Janeiro</h2>
+        <p class="temp">28°C</p>
 
-    <p>Nuvens Dispersas</p>
-    <p>Umidade: 70%</p>
+        <p class="descricao">Nuvens Dispersas</p>
+        <p class="umidade">Umidade: 70%</p>
+      </div>
+    </div>
   </body>
 </html>
